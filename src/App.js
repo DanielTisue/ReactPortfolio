@@ -5,7 +5,6 @@ import './App.scss';
 import OlivieriPhoto from "./components/pageComponents/OlivieriPhoto";
 import Passionate from "./components/pageComponents/Passionate";
 import SkateSpot from "./components/pageComponents/SkateSpot";
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -15,9 +14,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
-        {/* <Section /> */}
-     
         <Router>
            <Switch>
              <Route path="/" exact component={Section} />

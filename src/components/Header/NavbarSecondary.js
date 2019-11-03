@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-export default class NavbarSecondary extends Component {
+class NavbarSecondary extends Component {
   render() {
     return (
       <div className="secondary-nav">
@@ -17,6 +17,6 @@ export default class NavbarSecondary extends Component {
   }
 }
 
-
+export default NavbarSecondary;
 
 

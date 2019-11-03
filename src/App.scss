@@ -59,6 +59,20 @@ p, .text {
   opacity: .7;
 }
 
+.text-muted-title {
+  opacity: .7;
+}
+
+.center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+//MEDIA QUERIES
 @include mediaXs {
    h1 {
       font-size: 60px;
@@ -188,9 +202,6 @@ p, .text {
   }
 }
 
-
-   
-
 @include mediaMd {
   h1 {
     font-size: 60px !important;
@@ -271,7 +282,7 @@ p, .text {
     // min-height: 10vh;
     width: 100vw;
     background: transparent;
-    color: $accentColor;
+    color: $secondaryColor;
 
     .nav-links {
       list-style: none;
@@ -284,6 +295,15 @@ p, .text {
         
         i {
           margin: 1rem;
+        }
+
+        &:hover {
+
+          transform: scale(1.2);
+          color: $accentColor;
+          cursor: pointer;
+          @include easeIO;
+
         }
       }
     }
@@ -581,5 +601,21 @@ p, .text {
 }
 
 .recent-work-page {
-  text-align: center;
+
+  .title-summary-wrapper {
+
+    background-color: $accentColor;
+    
+
+    .page-title {
+      padding-bottom: 1rem;
+      
+      }
+  
+      p {
+        padding-bottom: 1rem;
+      }
+
+  }
+  
 }
