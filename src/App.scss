@@ -396,13 +396,19 @@ p, .text {
       flex-direction: row;
       justify-content: space-evenly;
       color: $secondaryColor;
+      
+      a {
+        text-decoration: none;
+        color: $secondaryColor;
+      }
      
       .project1, .project2, .project3 {
         padding: 5px;
         height: 65vh;
-        width: 25%;
+        width: 300px;
         position: relative;
         bottom: -1rem;
+
         
 
         &:hover {
@@ -414,7 +420,6 @@ p, .text {
         }
         
         h5 {
-          font-style: italic;
           padding-top: -1rem;
           position: relative;
           top: -.2rem;
@@ -423,7 +428,12 @@ p, .text {
           overflow: hidden;
 
           &:hover {
+             @include easeIO;
             overflow: visible;
+            .slant {
+              transform: skew(30deg, 0deg);
+            }
+           
           }
         }  
       }

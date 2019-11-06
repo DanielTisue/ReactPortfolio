@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 
 class NavbarSecondary extends Component {
@@ -7,10 +7,15 @@ class NavbarSecondary extends Component {
     return (
       <div className="secondary-nav">
         <ul className="nav-links">
-          <li><i class="fas fa-arrow-circle-left" />Home</li>
-          <li>Next Project
-          <i class="fas fa-arrow-circle-right" />
-          </li>   
+          <Link to="/">
+            <li><i class="fas fa-arrow-circle-left" />Home</li>
+          </Link>
+          <Link to="/">
+            <li>Next Project
+            <i class="fas fa-arrow-circle-right" />
+            </li> 
+          </Link>
+            
         </ul>
       </div>
     )

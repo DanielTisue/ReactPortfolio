@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 
 export default class ProjectSection extends Component {
@@ -12,19 +13,24 @@ export default class ProjectSection extends Component {
         </div>
        {/* < Multiple Projects /> */}
         <div className="project-grid">
-
-          <div className="project1">
-            <h5>Olivieri<br></br>Photo</h5> 
-          </div>
-
-          <div className="project2">
-            <h5>Uniq<br></br>Tee</h5>
-          </div>
-
-          <div className="project3">
-            <h5>Skate<br></br>Spots</h5>
-          </div>
-        </div> 
+            <Link to="/OlivieriPhoto">
+                  <div className="project1">
+                    <h5 className="slant">Olivieri<br></br>Photo</h5>
+                  </div>
+            </Link>
+                
+            <Link to="/Passionate">
+                  <div className="project2">
+                    <h5>Uniq<br></br>Tee</h5>
+                  </div>
+            </Link>
+                
+            <Link to="/SkateSpots">
+                  <div className="project3">
+                    <h5>Skate<br></br>Spots</h5>
+                  </div>
+            </Link> 
+          </div> 
       </div>
     )
   }
