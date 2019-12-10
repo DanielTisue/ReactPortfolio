@@ -10,12 +10,6 @@ class NavbarSecondary extends Component {
           <Link to="/">
             <li><i class="fas fa-arrow-circle-left" />Home</li>
           </Link>
-          <Link to="/">
-            <li>Next Project
-            <i class="fas fa-arrow-circle-right" />
-            </li> 
-          </Link>
-            
         </ul>
       </div>
     )

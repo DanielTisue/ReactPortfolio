@@ -15,7 +15,7 @@ export default class ProjectSection extends Component {
         <div className="project-grid">
             <Link to="/OlivieriPhoto">
                   <div className="project1">
-                    <h5 className="slant">Olivieri<br></br>Photo</h5>
+                    <h5 className="slant">Olivieri<br/>Photo</h5>
                   </div>
             </Link>
                 

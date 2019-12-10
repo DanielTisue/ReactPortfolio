@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
+import './OlivieriPhoto.scss';
 import NavbarSecondary from '../Header/NavbarSecondary'
 import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
 
+
 export default class OlivieriPhoto extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
-      <div className="recent-work-page">
+      <div>
         <NavbarSecondary />
-        <div className="title-summary-wrapper">
-          <div className="page-title center">
-            <h4 className="text-muted-title italic">Olivieri Photo</h4>
+          <div className="center title-text">
+            <h4>Olivieri Photo</h4>
           </div>
-          <div>
-            <p className="center">
+          <div className="center summary-text">
+            <p>
               This is where the project summary will go.
             </p>
           </div>
-        </div>
+        
         <SectionOne />
         <SectionTwo />
       </div>
