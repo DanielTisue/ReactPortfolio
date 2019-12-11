@@ -1,7 +1,7 @@
 @import '../../styles/_config.scss';
 
 .section-title {
-  padding-bottom: 50px;
+  padding: 25px 0;
   }
 
 .section-wrapper {
@@ -10,7 +10,7 @@
 }
 
 .section-text {
-  padding: 5px;
+  padding: 0 25px 5px 25px;
 }
 
 img {
@@ -21,11 +21,13 @@ img {
  .section-grid-one {
    background-color: $secondaryColor;
    color: $primaryColor;
-  
+   padding: 1rem 0;
+   height: 100vh;
  } 
 
  .section-grid-two {
     background-color: $primaryColor;
     color: $secondaryColor;
-  
+    padding: 1rem 0;
+    height: 100vh; 
  }

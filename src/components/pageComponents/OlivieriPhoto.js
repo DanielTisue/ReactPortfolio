@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import './OlivieriPhoto.scss';
 import NavbarSecondary from '../Header/NavbarSecondary'
 import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
+import SectionThree from './SectionThree'
 
 
 export default class OlivieriPhoto extends Component {
@@ -14,16 +14,19 @@ export default class OlivieriPhoto extends Component {
       <div>
         <NavbarSecondary />
           <div className="center title-text">
-            <h4>Olivieri Photo</h4>
+            <h1>Olivieri Photo</h1>
           </div>
           <div className="center summary-text">
             <p>
               This is where the project summary will go.
+            
+              LoremIpsunm LoremIpsunm LoremIpsunm LoremIpsunm LoremIpsunm LoremIpsunm LoremIpsun mLoremIpsunm LoremIpsunmLore mIpsunmLoremIpsunmL oremIpsunmLoremIpsunmLor emIpsunmLo remI psunmLo remIpsunmLoremI psunmLoremIpsun mL oremIps unmLoremIpsunm LoremIp sunm LoremIp sunmLoremIpsun mLoremIps unmLo remIps unmLore mIpsunmL oremIpsun mLoremI psunm
             </p>
           </div>
         
         <SectionOne />
         <SectionTwo />
+        <SectionThree />
       </div>
     )
   }

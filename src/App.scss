@@ -313,6 +313,20 @@ p, .text {
     }
   }
 
+  .title-text {
+  font-style: italic;
+}
+
+.summary-text {
+  margin-bottom: 25px;
+  p {
+    text-align: left;
+    margin: 0 auto;
+    width: 75%;
+    padding: 2rem;
+  }
+}
+
 
 //MAIN SECTION
 .sectionMain {
