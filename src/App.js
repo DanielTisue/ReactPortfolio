@@ -18,7 +18,7 @@ export default class App extends Component {
            <Switch>
              <Route path="/" exact component={Section} />
             <Route path="/OlivieriPhoto" component={OlivieriPhoto} />
-            <Route path="/SkateSpot" component={SkateSpot} />
+            <Route path="/SkateSpot" exact component={SkateSpot} />
             <Route path="/Passionate" component={Passionate} />
           </Switch>
         </Router>

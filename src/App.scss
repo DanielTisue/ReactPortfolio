@@ -14,9 +14,12 @@ body {
   line-height: 1.6;
   height: 100vh;
 }
-a {
-  text-decoration: none;
-  color: $secondaryColor
+
+a.link-text {
+  text-decoration: none !important;
+  color: $secondaryColor;
+  font-family: 'fjallaone', sans-serif;
+  font-size: 1.8rem;
 }
 
 h1 {
@@ -49,6 +52,8 @@ h5, h6, .header-title {
   font-size: 2rem;
   letter-spacing: 3px;
 }
+
+
 
 p, .text {
   font-family: 'Roboto', sans-serif;
@@ -279,39 +284,54 @@ p, .text {
 
   }
 
+ //SECOND NAVBAR 
   .secondary-nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // min-height: 10vh;
     width: 100vw;
-    background: $primaryColor;
+    background: transparent;
     color: $secondaryColor;
 
-    .nav-links {
-      list-style: none;
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-
-      li {
-        
-        i {
-          margin: 1rem;
-        }
-
-        &:hover {
-
-          transform: scale(1.2);
-          color: $accentColor;
-          cursor: pointer;
-          @include easeIO;
-
-        }
-      }
+    ul.nav-links {
+    list-style: none;
+a {
+  text-decoration: none;
+  color: $secondaryColor;
+  text-transform: uppercase;
+     
+    p{
+      font-family: 'fjallaone', sans-serif;
+      font-size: 1.8rem;
+      text-decoration: none;
+      padding-left: 1.2rem;
+      padding-top: 1.2rem;
+      
     }
+
+    p:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+      color:  $accentColor;
+      @include easeIO;
+    }
+     i {
+       padding-right: .6rem;
+     }
+    i.fas:hover {
+      color:  $accentColor;
+      @include easeIO;
+    }
+}
+   
+
   }
+      
+
+      }
+
+  
 
   .title-text {
   font-style: italic;
@@ -481,18 +501,19 @@ p, .text {
 //ABOUT ME
 .sectionAboutMe {
   height: 100vh;
-  background-image: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
-  url(./styles/img/47680807_10156976939454797_3316410726192513024_n.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-color: $primaryColor;
+  // background-image: 
+  // linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+  // url(./styles/img/47680807_10156976939454797_3316410726192513024_n.jpg);
+  // background-repeat: no-repeat; 
+  // background-size: cover;
+  background-color: #f6f5f5;
+  opacity: 1.5;
   text-align: center;
   padding: 15px 0;
  
 
    .aboutMe-section-title {
-      color: $secondaryColor;
+      color: $primaryColor;
       text-align: center;
       margin: 5vh 0;
       // margin-bottom: 2rem;     
@@ -502,7 +523,7 @@ p, .text {
     text-align: left;
     padding: 0 4rem;
     margin-top: 20vh;
-    
+    color: #282c2e;
 
     span {
       color: $accentColor;
@@ -518,7 +539,7 @@ p, .text {
   height: 100vh;
   background-color: $secondaryColor;
   color: $primaryColor;
-  padding-top: 5vh;
+  padding: 5vh 0;
 
   .contactMe-section-title {
       color: $primaryColor;
@@ -528,9 +549,7 @@ p, .text {
 
    .icons {
      text-align: center;
-      margin-top: 1.2rem;
-      padding-left: 10px;
-      color: $primaryColor;
+     color: $primaryColor;
 
       .icon-spacing {
         padding: .6rem;
@@ -552,12 +571,15 @@ p, .text {
 
 //CONTACT ME FORM
   .form-wrapper {
-    
+    form {
+      padding-bottom: 2rem;
+    }
  
     .form {
       display: flex;
       flex-direction: column;
       align-items: center;
+      
 
       .form-item {
         padding-bottom: 1.8rem;

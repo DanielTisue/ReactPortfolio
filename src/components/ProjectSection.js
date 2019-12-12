@@ -25,7 +25,7 @@ export default class ProjectSection extends Component {
                   </div>
             </Link>
                 
-            <Link to="/SkateSpots">
+            <Link to="/SkateSpot">
                   <div className="project3">
                     <h5>Skate<br></br>Spots</h5>
                   </div>

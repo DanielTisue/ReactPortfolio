@@ -19,7 +19,8 @@ const Menu = ({ open }) => {
                     offset={0}
                     duration={500}
                   >
-                      <i className="fas fa-arrow-circle-up fa-2x" />
+                     <p><i className="fas fa-arrow-circle-up" />
+                      <span className="link-text">TOP</span></p>
                     </Link>
               </li>
               
@@ -32,7 +33,7 @@ const Menu = ({ open }) => {
                   offset={0}
                   duration={500}
                 >
-                  <p>RECENT WORK</p>
+                  <p className="link-text">RECENT WORK</p>
                 </Link>
               </li>
               <li className="nav-item">
@@ -44,7 +45,7 @@ const Menu = ({ open }) => {
                   offset={0}
                   duration={500}
                 >
-                  <p>ABOUT ME</p>
+                  <p className="link-text">ABOUT ME</p>
                 </Link>
               </li>
               <li className="nav-item">
@@ -56,7 +57,7 @@ const Menu = ({ open }) => {
                   offset={0}
                   duration={500}
                 >
-                  <i className="fas fa-envelope-square fa-2x" />
+                  <p className="link-text">CONTACT ME</p>
                 </Link>
               </li>
               {/* <li className="nav-item">

@@ -28,7 +28,6 @@ export const StyledMenu = styled.nav`
     p{
       font-family: 'fjallaone', sans-serif !important;
       font-size: 1.8rem !important;
-      
     }
 
     p:hover {
@@ -39,9 +38,10 @@ export const StyledMenu = styled.nav`
       color:  #83d0f2;
       transition: all 0.3s linear;
     }
-
-    i.fas:hover {
-      transform: scale(1.2) !important;
+    i.fas {
+      padding-right: .6rem;
+    }
+    i.fas:hover { 
       color:  #83d0f2;
       transition: all 0.3s linear;
     }

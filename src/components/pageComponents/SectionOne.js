@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import image from '../../styles/img/designecologist-Pmh0UoG1vlE-unsplash.jpg';
-import './SectionOne.scss'
+add
 
 export default class SectionOne extends Component {
   render() {
