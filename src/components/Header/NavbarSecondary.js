@@ -11,16 +11,10 @@ class NavbarSecondary extends Component {
       
         <div className="secondary-nav">
           <ul className="nav-links">
-            
-           
             <Link to='/#ProjectSection'>
               <p><i className="fas fa-arrow-circle-left" />
                 <span className="link-text">Home</span></p>
-            </Link>
-           
-             
-
-            
+            </Link> 
           </ul>
         </div>
     )
