@@ -4,13 +4,22 @@ import '../../App.scss'
 
 
 
-
 class ContactForm extends Component {
   state = {
     email: '',
     subject: '',
     message: '',
   }
+
+  constructor(props) {
+    super(props);
+    this.alertSuccess = this.alertSuccess.bind(this);
+  }
+
+  alertSuccess() {
+    setTimeout(function(){alert('Message Sent!');}, 200);
+  }
+  
   handleSubmit(e) {
 
     const MAIL = `${process.env.REACT_APP_MAIL}`;
@@ -32,7 +41,8 @@ class ContactForm extends Component {
       USER
     )
    
-    this.resetForm()
+   this.resetForm()
+   this.alertSuccess();
   }
 
   resetForm() {
@@ -46,6 +56,8 @@ class ContactForm extends Component {
   handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
   }
+
+
 
   render() {
     return (

@@ -6,6 +6,10 @@ import SectionThree from './SectionThree'
 
 
 export default class Passionate extends Component {
+  
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="recent-work-page">

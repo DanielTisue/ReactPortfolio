@@ -5,6 +5,10 @@ import SectionTwo from './SectionTwo'
 import SectionThree from './SectionThree'
 
 export default class SkateSpot extends Component {
+  
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>
