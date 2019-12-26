@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Navbar from './components/Header/Navbar';
 import Section from "./components/Section";
 import './App.scss';
 import OlivieriPhoto from "./components/pageComponents/OlivieriPhoto";
@@ -7,7 +6,10 @@ import Passionate from "./components/pageComponents/Passionate";
 import SkateSpot from "./components/pageComponents/SkateSpot";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
+const Home = (props) => {
+  console.log(props);
+  return <h1>Home</h1>
+}
 
 export default class App extends Component {
 
@@ -20,6 +22,7 @@ export default class App extends Component {
             <Route path="/OlivieriPhoto" component={OlivieriPhoto} />
             <Route path="/SkateSpot" component={SkateSpot} />
             <Route path="/Passionate" component={Passionate} />
+            <Route path="/home" component={Home} />
           </Switch>
         </Router>
        

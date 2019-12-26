@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import "../../App.scss"
 
 
@@ -11,12 +11,16 @@ class NavbarSecondary extends Component {
       
         <div className="secondary-nav">
           <ul className="nav-links">
-            <Link to='/'
-            >
+            
+           
+            <Link to='/#ProjectSection'>
               <p><i className="fas fa-arrow-circle-left" />
                 <span className="link-text">Home</span></p>
-
             </Link>
+           
+             
+
+            
           </ul>
         </div>
     )
