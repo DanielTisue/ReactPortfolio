@@ -27,19 +27,25 @@ const passion = {
   summary:
     "Markos Swcharz is an experienced skateboarder and videographer located in Vienna, Austria. He owns a european based skateboarding company. Markos's first goal was to pursue ecommerce. However, the goal wasn't to just sell skateboards but also re-create a skateboard community he grew up with and replicate it on line. The site was to act as an ecommerce, interactive, and showcase his videographer skills.",
   context: {
-    role: "FullStack Developer, ",
+    role: "UX/UI Designer, Front end, React",
     technology:
       "Adobe: XD, Illustrator, Photoshop. React, Node.js, Express, Cloudinary API."
   },
-  challenge: "Design and build a website that allowed Markos to sell products but also create an online skate community. The site would contain ecommerce functionality, skaters to upcoming events such as giveways, contests, etc. The techincal aspects would have to further include pay option API, Cloudinary API (for videos), and way to display the latest events.  ",
+  challenge:
+    "Design and build a website that allowed Markos to sell products but also create an online skate community. The site would contain ecommerce functionality, skaters to upcoming events such as giveways, contests, etc. The techincal aspects would have to further include pay option API, Cloudinary API (for videos), and way to display the latest events.  ",
   process:
-    "Sketches were made to lay the skeletal groundwork for the site then built upon in Abobe XD: this mapped out the GUI of the website (such as icons, colors, typography) and its navigational architecture. Using React, the eccomerce portion of the page was created and the general landing page. The React ecommerce section existed as a front end application which would also serve as a Progressive Web App for mobile users.",
+    "Sketches were made to lay the skeletal groundwork for the site then built upon in Abobe XD: this mapped out the GUI of the website (such as icons, colors, typography) and its navigational architecture. ",
+
+  //Using React, the eccomerce portion of the page was created and the general landing page. The React ecommerce section existed as a front end application which would also serve as a Progressive Web App for mobile users.
+
   problems: {
-    second: "The most difficult part of this project was to design and combine an ecommerce site that would primarily exist as a frontend aplication.",
-    solution: "Use api calls to display upcoming events which allowed the application to still exist as more of a frontend for eccommerce. Site speed was primary focus to ensure credibility."
+    second:
+      "The most difficult part of this project was to design and build an ecommerce site that would primarily exist as a frontend application why also serving the client and user functionally.",
+    solution:
+      "Use api calls to display upcoming events which allowed the application to still exist as a frontend application. Site speed was the primary focus to ensure credibility."
   },
-  solution: "Markos has begun marketing his site and stated he is shock and amazed at the site. This was a good thing. "
-  
+  solution:
+    'Markos has begun marketing his site and stated he is "shock and awe at the site". This was a good thing. '
 };
 
 //----------------------------------------------
@@ -66,6 +72,10 @@ const skate = {
 
     solution: "Users now have an updated design focused site that serves as a global skate spot finder as well as a skateboarder community. "
 
+    //User testing response
+    //Chrome audit anaylitics
+    //Image optimization
+
   }
 
 };
@@ -77,18 +87,15 @@ const skate = {
 const drink = {
   title: "Drink'd",
   summary:
-    "This was a personal project that allows the User to search different cocktail recipes. ",
+    "This was a personal project that was a redisgn of a project originally built with gold old fashioned Html, CSS, and JS. The site allows the User to search different cocktail recipes. ",
   context: {
-    role: "Frontend Developer",
-    technology:
-      "Adobe: XD, Illustrator, Photoshop. React, CocktailDB API."
+    role: "Front end, React",
+    technology: "Adobe: XD, React, CocktailDB API."
   },
-  challenge: "Design and build a Progessive Web App.The biiggest challenge to this project was finding a way to parse the ingredient data which wasn't represented in your usual array form. Each ingredient was listed as its own individual object.",
+  challenge:
+    "Design and build a Progessive Web App. Create designs that would emphasize the latest in desgin principles. The biggest challenge to this project was finding a way to parse the ingredient data which wasn't represented in your usual array form. Each ingredient was listed as its own individual object.",
   process:
-    "I used Adobe XD to map mobile and desktop UI layout. The application .",
-  solution: {
-    first: "Coming soon...",
-    second: "The most difficult part of this project was to design and combine an ecommerce site that would communicate with an already existing Node.js/Express web application called the SkateSpots (this was a personal project I built much ealier). "
-  }
+    "Sketched layout and redesigned site layout, color UI, and icon list in Adobe XD. Build using React. The application was to exist as a single page application for quick load times and effortless usuability for the user.",
+  solution: "Tell about chrome audit specifications and user testing"
+};
 
-}
